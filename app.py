@@ -33,7 +33,7 @@ def communicate():
 st.title("クチコミ大好き支配人君")
 st.write("ChatGPTが支配人になりきって、入力したクチコミに返信してくれます")
 
-user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
+user_input = st.text_input("返信するクチコミを入力してください。", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
