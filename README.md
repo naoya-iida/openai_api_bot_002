@@ -1,2 +1,2 @@
 # openai_api_bot_002
-chatGPTテスト
+chatGPTの支配人君
