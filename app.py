@@ -35,7 +35,7 @@ def communicate():
 st.title("クチコミ大好き支配人君")
 st.write("ChatGPTが支配人になりきって、入力したクチコミに返信してくれます")
 image = Image.open('manager2.jpg')
-st.image(image, caption='支配人君',use_column_width=false)
+st.image(image, caption='支配人君',use_column_width=False)
 
 user_input = st.text_input("返信してほしいクチコミを入力してください。", key="user_input", on_change=communicate)
 
