@@ -1,6 +1,7 @@
 
 import streamlit as st
 import openai
+import cv2
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
@@ -32,6 +33,9 @@ def communicate():
 # ユーザーインターフェイスの構築
 st.title("クチコミ大好き支配人君")
 st.write("ChatGPTが支配人になりきって、入力したクチコミに返信してくれます")
+img = cv2.imread("manager.jpg")
+cv2.imshow("manager", img)
+cv2.waitKey(0)
 
 user_input = st.text_input("返信してほしいクチコミを入力してください。", key="user_input", on_change=communicate)
 
