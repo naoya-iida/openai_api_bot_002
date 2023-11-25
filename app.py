@@ -22,12 +22,12 @@ def communicate():
     user_message = {"role": "user", "content": st.session_state["user_input"]}
     messages.append(user_message)
 
-    # response = openai.ChatCompletion.create(
-    #    model="gpt-3.5-turbo",
-    #    messages=messages
-    # )
-    response = openai.chat.completions.create(model="gpt-3.5-turbo",
-    messages=messages)  
+     response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages
+     )
+    # response = openai.chat.completions.create(model="gpt-3.5-turbo",
+    # messages=messages)  
 
     bot_message = response["choices"][0]["message"]
     messages.append(bot_message)
