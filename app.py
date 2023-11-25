@@ -29,7 +29,8 @@ def communicate():
     response = client.chat.completions.create(model="gpt-3.5-turbo",
     messages=messages)  
 
-    bot_message = response["choices"][0]["message"]
+    # bot_message = response["choices"][0]["message"]
+    bot_message = response.choices(0).message)
     messages.append(bot_message)
 
     st.session_state["user_input"] = ""  # 入力欄を消去
