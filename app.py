@@ -1,7 +1,6 @@
 
 import streamlit as st
 import openai
-import streamlit as st
 from PIL import Image
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
