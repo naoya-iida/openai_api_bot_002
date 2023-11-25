@@ -7,7 +7,7 @@ from PIL import Image
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 # openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 client = OpenAI(
-api_key=st.secrets.OpenAIAPI.openai_api_key,)
+api_key=st.secrets.OPENAI_API_KEY.openai_api_key,)
 
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
