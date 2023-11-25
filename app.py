@@ -30,7 +30,7 @@ def communicate():
     messages=messages)  
 
     # bot_message = response["choices"][0]["message"]
-    bot_message = response.choices[0].message
+    bot_message = response.choices[0].message.content
     messages.append(bot_message)
     print(bot_message)
     
