@@ -1,6 +1,6 @@
 
 import streamlit as st
-import openai
+# import openai
 from openai import OpenAI
 from PIL import Image
 
