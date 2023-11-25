@@ -26,8 +26,8 @@ def communicate():
     #model="gpt-3.5-turbo",
     #messages=messages
     # )
-     response = openai.chat.completions.create(model="gpt-3.5-turbo",
-     messages=messages)  
+    response = openai.chat.completions.create(model="gpt-3.5-turbo",
+    messages=messages)  
 
     bot_message = response["choices"][0]["message"]
     messages.append(bot_message)
